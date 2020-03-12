@@ -6,6 +6,7 @@
       <!-- <link href="/my/css/bootstrap.min.css" rel="stylesheet"> -->
       <link href="/my/css/bootstrap.css" rel="stylesheet">
       <link href="/my/css/my.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="/my/js/jquery-3.4.1.min.js"></script>
       <script src="/my/js/bootstrap.min.js"></script>
       <script src="/my/js/bootstrap.js"></script>
@@ -14,9 +15,9 @@
 
 <!-- Navbar part start -->
     <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="navbar-brand" href="/">Chan</a>
+      <a class="navbar-brand" href="/">Pental</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">Menu</span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,8 +50,8 @@
   <!-- Login part start -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-          <div class="modal-header mycolor1">
+        <div class="modal-content" style="width:350px; height:400px">
+          <div class="modal-header">
             <h5 class="modal-title" id="loginModalLabel">LOGIN</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -59,15 +60,18 @@
           <div class="modal-body">
             <form method="post" action="/login/check">
               <div class="form-inline" style="margin-bottom:10px">
-                아이디 :&nbsp;&nbsp;<input type="text" class="form-control" name="id" id="id">
+                <input type="text" class="Login-form" name="id" id="id" placeholder="ID">
               </div>
               <div class="form-inline">
-                암&nbsp;&nbsp;&nbsp;&nbsp;호 :&nbsp;&nbsp;<input type="password" class="form-control" size="19" name="pw" id="pw">
+                <input type="password" class="Login-form" name="pw" id="pw" placeholder="Password">
               </div>
           </div>
-          <div class="modal-footer mycolor1">
-            <input type="submit" class="btn btn-light" value="로그인">
-            <button type="button" class="btn btn-light" data-dismiss="modal">닫기</button>
+          <div class="modal-footer">
+            <input type="submit" class="btn_login" value="Login">
+            <a href="#" rel="nofollow" data-type="fb" class="btn_login" style="background-color:#4064ad; text-align: left;">
+              <div style="position: fixed; width: inherit; display: inline-block;"><i class="fa fa-facebook-f" style="margin-left: 20px; margin-right:35px"></i></div>
+              <div style="position: relative; width: inherit; display: inline-block; text-align: center;">Login with facebook</div></a>
+              <div style="width: 100%; text-align: center; font-size:14px; margin-top:16px">Dont have an account? <a href="#" style="color:#ec3939">sign up</a></div>
           </div>
          </form>
         </div>

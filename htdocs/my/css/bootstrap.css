@@ -4411,6 +4411,7 @@ input[type="button"].btn-block {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
+  color: white;
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
@@ -6020,7 +6021,7 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: white;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -6052,7 +6053,7 @@ a.close.disabled {
   align-items: flex-start;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
   text-align: center;
@@ -6062,7 +6063,7 @@ a.close.disabled {
   position: absolute;
   right: 20px;
   padding: 1rem 1rem;
-  margin: -1rem -1rem -1rem auto;
+  margin: -2rem -1rem -1rem auto;
 }
 
 .modal-title {
@@ -6075,8 +6076,10 @@ a.close.disabled {
 
 .modal-body {
   position: relative;
+  /*
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  */
   padding: 1rem;
 }
 
